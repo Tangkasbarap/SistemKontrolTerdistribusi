@@ -86,9 +86,9 @@ plot "sensor_data.dat" using 1:2 smooth csplines ls 1 title "Temperature (C)",  
 ```
 
 ## ⚙️ Langkah-langkah Start
-Masuk ke file hello-rust\src\bin\main.rs kemudian run sesuai port yang digunakan
+- Masuk ke file hello-rust\src\bin\main.rs kemudian run sesuai port yang digunakan
 ```cargo espflash flash --release --bin hello-rust```
-Masuk ke file hello-rust\gateway\gatewaytes.py kemudian run 
+- Masuk ke file hello-rust\gateway\gatewaytes.py kemudian run 
 ```python gatewaytes.py```
-Masuk ke file hello-rust\gateway\gnuplot.py kemudian run
+- Masuk ke file hello-rust\gateway\gnuplot.py kemudian run
 ```python gnuplot.py```
