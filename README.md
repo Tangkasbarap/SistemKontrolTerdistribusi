@@ -83,3 +83,12 @@ set style line 4 lc rgb "#ff7f00" lw 2
 set style line 5 lc rgb "#984ea3" lw 2
 
 plot "sensor_data.dat" using 1:2 smooth csplines ls 1 title "Temperature (C)",      "sensor_data.dat" using 1:3 smooth csplines ls 2 title "Humidity (%)",      "sensor_data.dat" using 1:4 smooth csplines ls 3 title "Hot Side Outlet (C)",      "sensor_data.dat" using 1:5 smooth csplines ls 4 title "Cold Side Outlet (C)",      "sensor_data.dat" using 1:6 smooth csplines ls 5 title "Heat Duty (W)"
+```
+
+## ⚙️ Langkah-langkah Start
+Masuk ke file hello-rust\src\bin\main.rs kemudian run sesuai port yang digunakan
+```cargo espflash flash --release --bin hello-rust```
+Masuk ke file hello-rust\gateway\gatewaytes.py kemudian run 
+```python gatewaytes.py```
+Masuk ke file hello-rust\gateway\gnuplot.py kemudian run
+```python gnuplot.py```
